@@ -88,3 +88,32 @@ DELETE   | /api/Pizzas/{id}          | Delete a pizza
 Pre-loaded Pizzas: All Meat Special, Hawaiian Delight, Spinach Garden
 
 Pre-loaded Toppings: Ham, Pineapple, Longganisa, Bacon, Kesong Puti, Spinach, Chorizo de Bilbao, Mushrooms
+
+
+Tesing Using cURL
+
+Get all toppings:
+
+curl -X GET "https://localhost:7113/api/Toppings" -H "accept: application/json"
+
+Get All pizzas:
+
+curl -X GET "https://localhost:7113/api/Pizzas" -H "accept: application/json"
+
+Create New Topping:
+
+curl -X POST "https://localhost:7113/api/Toppings" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "name": "Salted Egg",
+    "description": "Fresh Salted Egg",
+    "price": 25.00
+  }'
+
+Using Postman
+
+• Import the API endpoints from the Swagger JSON: https://localhost:7113/swagger/v1/swagger.json
+
+• Set the base URL to https://localhost:7113
+
+• Test the endpoints as shown in the table
