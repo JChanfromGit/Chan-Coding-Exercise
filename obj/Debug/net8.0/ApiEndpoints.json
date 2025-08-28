@@ -1,0 +1,381 @@
+[
+  {
+    "ContainingType": "API_Coding_Exercise.Controllers.PizzasController",
+    "Method": "GetAllPizzas",
+    "RelativePath": "api/Pizzas",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "API_Coding_Exercise.DataLibrary.Models.ApiResponse\u00601[[System.Collections.Generic.List\u00601[[API_Coding_Exercise.DataLibrary.Models.PizzaModel, API Coding Exercise, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "API_Coding_Exercise.Controllers.PizzasController",
+    "Method": "CreatePizza",
+    "RelativePath": "api/Pizzas",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "createPizzaDto",
+        "Type": "API_Coding_Exercise.DataLibrary.Models.CreatePizzaDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "API_Coding_Exercise.DataLibrary.Models.ApiResponse\u00601[[API_Coding_Exercise.DataLibrary.Models.PizzaModel, API Coding Exercise, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 201
+      },
+      {
+        "Type": "API_Coding_Exercise.DataLibrary.Models.ApiResponse\u00601[[API_Coding_Exercise.DataLibrary.Models.PizzaModel, API Coding Exercise, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 400
+      },
+      {
+        "Type": "API_Coding_Exercise.DataLibrary.Models.ApiResponse\u00601[[API_Coding_Exercise.DataLibrary.Models.PizzaModel, API Coding Exercise, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 409
+      }
+    ]
+  },
+  {
+    "ContainingType": "API_Coding_Exercise.Controllers.PizzasController",
+    "Method": "GetPizza",
+    "RelativePath": "api/Pizzas/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "API_Coding_Exercise.DataLibrary.Models.ApiResponse\u00601[[API_Coding_Exercise.DataLibrary.Models.PizzaModel, API Coding Exercise, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "API_Coding_Exercise.DataLibrary.Models.ApiResponse\u00601[[API_Coding_Exercise.DataLibrary.Models.PizzaModel, API Coding Exercise, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 404
+      }
+    ]
+  },
+  {
+    "ContainingType": "API_Coding_Exercise.Controllers.PizzasController",
+    "Method": "UpdatePizza",
+    "RelativePath": "api/Pizzas/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "updatePizzaDto",
+        "Type": "API_Coding_Exercise.DataLibrary.Models.UpdatePizzaDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "API_Coding_Exercise.DataLibrary.Models.ApiResponse\u00601[[API_Coding_Exercise.DataLibrary.Models.PizzaModel, API Coding Exercise, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "API_Coding_Exercise.DataLibrary.Models.ApiResponse\u00601[[API_Coding_Exercise.DataLibrary.Models.PizzaModel, API Coding Exercise, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 400
+      },
+      {
+        "Type": "API_Coding_Exercise.DataLibrary.Models.ApiResponse\u00601[[API_Coding_Exercise.DataLibrary.Models.PizzaModel, API Coding Exercise, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "API_Coding_Exercise.DataLibrary.Models.ApiResponse\u00601[[API_Coding_Exercise.DataLibrary.Models.PizzaModel, API Coding Exercise, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 409
+      }
+    ]
+  },
+  {
+    "ContainingType": "API_Coding_Exercise.Controllers.PizzasController",
+    "Method": "DeletePizza",
+    "RelativePath": "api/Pizzas/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "API_Coding_Exercise.DataLibrary.Models.ApiResponse\u00601[[System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "API_Coding_Exercise.DataLibrary.Models.ApiResponse\u00601[[System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 404
+      }
+    ]
+  },
+  {
+    "ContainingType": "API_Coding_Exercise.Controllers.PizzasController",
+    "Method": "UpdatePizzaToppings",
+    "RelativePath": "api/Pizzas/{id}/toppings",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "updateToppingsDto",
+        "Type": "API_Coding_Exercise.DataLibrary.Models.UpdatePizzaToppingsDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "API_Coding_Exercise.DataLibrary.Models.ApiResponse\u00601[[API_Coding_Exercise.DataLibrary.Models.PizzaModel, API Coding Exercise, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "API_Coding_Exercise.DataLibrary.Models.ApiResponse\u00601[[API_Coding_Exercise.DataLibrary.Models.PizzaModel, API Coding Exercise, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 400
+      },
+      {
+        "Type": "API_Coding_Exercise.DataLibrary.Models.ApiResponse\u00601[[API_Coding_Exercise.DataLibrary.Models.PizzaModel, API Coding Exercise, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 404
+      }
+    ]
+  },
+  {
+    "ContainingType": "API_Coding_Exercise.Controllers.ToppingsController",
+    "Method": "GetAllToppings",
+    "RelativePath": "api/Toppings",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "API_Coding_Exercise.DataLibrary.Models.ApiResponse\u00601[[System.Collections.Generic.List\u00601[[API_Coding_Exercise.DataLibrary.Models.ToppingModel, API Coding Exercise, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "API_Coding_Exercise.Controllers.ToppingsController",
+    "Method": "CreateTopping",
+    "RelativePath": "api/Toppings",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "createToppingDto",
+        "Type": "API_Coding_Exercise.DataLibrary.Models.CreateToppingDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "API_Coding_Exercise.DataLibrary.Models.ApiResponse\u00601[[API_Coding_Exercise.DataLibrary.Models.ToppingModel, API Coding Exercise, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 201
+      },
+      {
+        "Type": "API_Coding_Exercise.DataLibrary.Models.ApiResponse\u00601[[API_Coding_Exercise.DataLibrary.Models.ToppingModel, API Coding Exercise, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 400
+      },
+      {
+        "Type": "API_Coding_Exercise.DataLibrary.Models.ApiResponse\u00601[[API_Coding_Exercise.DataLibrary.Models.ToppingModel, API Coding Exercise, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 409
+      }
+    ]
+  },
+  {
+    "ContainingType": "API_Coding_Exercise.Controllers.ToppingsController",
+    "Method": "GetTopping",
+    "RelativePath": "api/Toppings/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "API_Coding_Exercise.DataLibrary.Models.ApiResponse\u00601[[API_Coding_Exercise.DataLibrary.Models.ToppingModel, API Coding Exercise, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "API_Coding_Exercise.DataLibrary.Models.ApiResponse\u00601[[API_Coding_Exercise.DataLibrary.Models.ToppingModel, API Coding Exercise, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 404
+      }
+    ]
+  },
+  {
+    "ContainingType": "API_Coding_Exercise.Controllers.ToppingsController",
+    "Method": "UpdateTopping",
+    "RelativePath": "api/Toppings/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "updateToppingDto",
+        "Type": "API_Coding_Exercise.DataLibrary.Models.UpdateToppingDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "API_Coding_Exercise.DataLibrary.Models.ApiResponse\u00601[[API_Coding_Exercise.DataLibrary.Models.ToppingModel, API Coding Exercise, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "API_Coding_Exercise.DataLibrary.Models.ApiResponse\u00601[[API_Coding_Exercise.DataLibrary.Models.ToppingModel, API Coding Exercise, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 400
+      },
+      {
+        "Type": "API_Coding_Exercise.DataLibrary.Models.ApiResponse\u00601[[API_Coding_Exercise.DataLibrary.Models.ToppingModel, API Coding Exercise, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "API_Coding_Exercise.DataLibrary.Models.ApiResponse\u00601[[API_Coding_Exercise.DataLibrary.Models.ToppingModel, API Coding Exercise, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 409
+      }
+    ]
+  },
+  {
+    "ContainingType": "API_Coding_Exercise.Controllers.ToppingsController",
+    "Method": "DeleteTopping",
+    "RelativePath": "api/Toppings/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "API_Coding_Exercise.DataLibrary.Models.ApiResponse\u00601[[System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "API_Coding_Exercise.DataLibrary.Models.ApiResponse\u00601[[System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 404
+      }
+    ]
+  }
+]
