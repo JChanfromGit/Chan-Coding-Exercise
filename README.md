@@ -14,9 +14,10 @@ Git (for cloning the repository)
 Getting Started
 
 
-Clone The Repository & Build the Project:
+Clone the Repository & Build the Project:
 
 cd [your-testing-directory]
+
 git clone https://github.com/JChanfromGit/Chan-Coding-Exercise.git
 
 cd Chan-Coding-Exercise
